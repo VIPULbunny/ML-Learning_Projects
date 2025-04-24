@@ -1,0 +1,34 @@
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score as score, confusion_matrix as matrix, classification_report as report
+
+df = pd.read_csv("heart.csv")  
+print(df.head())  
+
+df.fillna(df.mean(), inplace=True)  
+
+X = df.drop(columns=["target"])  
+y = df["target"]  
+
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+
+X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.3, random_state=42)
+
+knn = KNeighborsClassifier(n_neighbors=5) 
+knn.fit(X_train, y_train)
+
+y_pred = knn.predict(X_test)
+
+
+accuracy = score(y_test, y_pred)
+print(f"Accuracy: {accuracy:.2f}")
+
+
+print("Confusion Matrix:\n", matrix(y_test, y_pred))
+print("Classification Report:\n", report(y_test, y_pred))
+
+
