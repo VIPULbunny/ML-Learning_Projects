@@ -1,6 +1,6 @@
 # ML-Learning_Projects
 
-01 **🏠 House Price Prediction using Linear Regression** project, 
+01 **Linear Regression -> House Price Prediction 🏠** project, 
 where we explore and apply **Linear Regression** to estimate house prices based on various input features.
 ---
 ## 📁 Project Folder
