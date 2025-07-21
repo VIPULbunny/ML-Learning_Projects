@@ -84,32 +84,35 @@ pip install -r requirements.txt
 ## 📁 Project Structure
 
 ```
-ML-Learning_Projects/
-├── Clustering/
-│   ├── Association/
-│   │     └── Apriori/
-│   │     └──Eclat/
-│   └── KMeans/
-├── Cross Validation Techniques/
+ML-Learning_Projects
+├── Clustering
+│   ├── Association
+│   │     └── Apriori
+│   │     └──Eclat
+│   └── KMeans
+├── Cross Validation Techniques
 │   └── Cross_Validation.ipynb
-├── Decision Tree/
+├── Decision Tree
 │   └── Car_Price_prediction.ipynb
-├── Heart disease Prediction/
+├── Heart disease Prediction
 │   └── Heart_Disease_Prediction.ipynb
-├── KNN/
-│   ├── MOVIES_project/
-│   └── KNN_Iphone_purchesed.ipynb/
-├── Linear Regression/
-│   ├── HousePrice.ipynb/
-│   └── Linear_Regression_Model.ipynb/
-├── Logistic Regression/
-│   ├── Titanic_suvival_project.ipynb/
-│   └── Logistic_Regression_Model.ipynb/
-├── Random Forest/
+├── KNN
+│   ├── MOVIES_project
+│   └── KNN_Iphone_purchesed.ipynb
+├── Linear Regression
+│   ├── HousePrice.ipynb
+│   └── Linear_Regression_Model.ipynb
+├── Logistic Regression
+│   ├── Titanic_suvival_project.ipynb
+│   └── Logistic_Regression_Model.ipynb
+├── Random Forest
 │   ├── Credit Card Fraud Detection
 │   └── Random_F_Regressor.ipynb
-├── Support Vector Regression/
-│   └── SVR_Model.ipynb
+├── Support Vector Regression
+│   ├── SVM(SVR)
+│   ├── SVM.ipynb
+│   ├──SVM_with_STD.ipynb
+│   └── SVM_without_STD.ipynb
 └── README.md
 ```
 
